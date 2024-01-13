@@ -1,0 +1,165 @@
+
+.timeline-container {
+    font-family: Arial, sans-serif;
+    font-size: 1rem;
+    max-width: 700px;
+    margin: 50px auto;
+}
+
+.timeline-data {
+    height: calc(100vh - 100px - 4.6rem);
+    margin-bottom: 0.6rem;
+}
+
+.timeline-data--list {
+    list-style: none;
+    padding: 0;
+    max-height: calc(100vh - 100px - 4.6rem);
+    /*overflow: hidden;*/
+    overflow-y: scroll;
+}
+
+.timeline-data--list::-webkit-scrollbar {
+    width: 0;
+    /*width: 0.8rem;*/
+}
+
+.timeline-data--list::-webkit-scrollbar-thumb {
+    /*background-color: #c4c9cc;*/
+}
+
+.timeline-input {
+    font: inherit;
+    line-height: 1.3;
+    padding: 0.65rem 0.6rem;
+    border: 1px gray solid;
+    /*margin-top: 0.6rem;*/
+    /*word-wrap: break-word;*/
+    width: 100%;
+    height: 2.5rem;
+    box-sizing: border-box;
+    resize: none;
+}
+
+.timeline-input:focus {
+    outline: none;
+}
+
+.timeline-input.invalid {
+    background-color: orange;
+}
+
+.timeline-media {
+    position: absolute;
+    display: flex;
+    height: 2.5rem;
+    right: 0;
+    top: 0;
+    background: none;
+}
+
+.timeline-media--start-audio,
+.timeline-media--start-video,
+.timeline-media--submit,
+.timeline-media--reset {
+    font: inherit;
+    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin: auto 0.5rem;
+}
+
+.timeline-media--timer {
+    margin: auto 0.5rem;
+}
+
+.timeline-data--item {
+    border: 1px gray solid;
+    border-radius: 1.2rem;
+    padding: 1.2rem;
+}
+
+.timeline-data--item:nth-child(n+2) {
+    margin-top: 1rem;
+}
+
+.timeline-data--item-top {
+    display: flex;
+}
+
+.timeline-data--item-content {
+    padding: 1rem 0;
+    width: 85%;
+}
+
+.timeline-data--item-text {
+    font-size: 1.2rem;
+}
+
+.timeline-data--item-date {
+    width: 15%;
+    text-align: center;
+    margin-top: 0;
+}
+
+/*Forms*/
+
+.timeline-input-coords-form:before {
+    content: '';
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.timeline-input-coords-form {
+    display: none;
+    position: fixed;
+    max-width: 23rem;
+    height: fit-content;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    padding: 1.5rem;
+    border: 1px gray solid;
+    border-radius: 1.2rem;
+    line-height: 1.5rem;
+    background-color: #fff;
+}
+
+.timeline-form--display-active {
+    display: unset;
+}
+
+.timeline-input-coords-form--control-panel {
+    margin-top: 1rem;
+    display: flex;
+    /*margin-left: auto;*/
+    justify-content: right;
+}
+
+.timeline-input-control-panel-btn {
+    /*margin-left: auto;*/
+    height: 2.5rem;
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    border-radius: 0.7rem;
+    margin-left: 1rem;
+}
+
+.timeline-btn {
+    font-size: inherit;
+    background: none;
+    border: 1px gray solid;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+.timeline-btn:hover {
+    outline: 1px gray solid;
+}
+
